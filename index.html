@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4ecfa">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Estás invitado a los XV de Josefina Günther · 20 de febrero de 2027 · 21:00 hs">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="XV Josefina Günther · Invitación">
+  <meta property="og:description" content="Te invito a celebrar mis 15 años. Sábado 20 de febrero de 2027, 21:00 hs.">
+  <meta property="og:locale" content="es_AR">
+  <title>XV Josefina Günther | Invitación</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2370528f'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23e3cc9a' font-family='serif'%3EXV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dibujos decorativos reutilizables: flor, mariposa y fileteado dorado -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="flower" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="1.1">
+        <ellipse cx="24" cy="12" rx="5.5" ry="9"/>
+        <ellipse cx="24" cy="12" rx="5.5" ry="9" transform="rotate(72 24 24)"/>
+        <ellipse cx="24" cy="12" rx="5.5" ry="9" transform="rotate(144 24 24)"/>
+        <ellipse cx="24" cy="12" rx="5.5" ry="9" transform="rotate(216 24 24)"/>
+        <ellipse cx="24" cy="12" rx="5.5" ry="9" transform="rotate(288 24 24)"/>
+      </g>
+      <circle cx="24" cy="24" r="2.6" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="butterfly" viewBox="0 0 64 48">
+      <g fill="currentColor" fill-opacity=".32" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
+        <g id="bf-wing">
+          <path d="M31 22 C26 6 10 1 5 8 C1 15 12 26 31 25 Z"/>
+          <path d="M31 27 C22 27 11 32 14 40 C17 46 28 40 31 29 Z"/>
+          <path d="M29 23 C22 15 14 12 10 13" fill="none" stroke-width=".7"/>
+          <circle cx="14" cy="14.500" r="2.400" fill="none" stroke-width=".7"/>
+          <circle cx="17" cy="38" r="1.800" fill="none" stroke-width=".7"/>
+        </g>
+        <use href="#bf-wing" transform="translate(64 0) scale(-1 1)"/>
+        <path d="M32 19 C31 12 28 8 24 6 M32 19 C33 12 36 8 40 6" fill="none" stroke-width=".9"/>
+      </g>
+      <ellipse cx="32" cy="28" rx="1.700" ry="9.500" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="filigree" viewBox="0 0 240 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <g id="fil-l">
+          <path d="M104 12 H72 C63 12 59 5 51 5 C44 5 42 12 48 13 C53 14 55 8 50 8"/>
+          <path d="M72 12 C64 12 62 19 54 19 C48 19 46.500 14 51 14.500"/>
+          <path d="M51 5 C43 5 37 9 29 9 C21 9 17 4 10 4 C6 4 4 7 6.500 8.500"/>
+          <path d="M54 19 C46 19 39 15 31 15 C23 15 17 20 9 20 C5 20 3.500 17 6 15.500"/>
+        </g>
+        <use href="#fil-l" transform="translate(240 0) scale(-1 1)"/>
+      </g>
+      <path d="M120 5 L127 12 L120 19 L113 12 Z" fill="currentColor"/>
+      <circle cx="108" cy="12" r="1.300" fill="currentColor"/>
+      <circle cx="132" cy="12" r="1.300" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <div class="bg-flower bg-flower-1" aria-hidden="true"><svg><use href="#flower"/></svg></div>
+  <div class="bg-flower bg-flower-2" aria-hidden="true"><svg><use href="#flower"/></svg></div>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="envelope-screen" id="envelope-screen" aria-label="Sobre de invitación">
+    <svg class="butterfly bf-e1" aria-hidden="true"><use href="#butterfly"/></svg>
+    <svg class="butterfly bf-e2" aria-hidden="true"><use href="#butterfly"/></svg>
+    <div class="envelope-intro">
+      <p class="eyebrow">Tenés una invitación especial</p>
+      <h1 class="envelope-title">
+        <span class="xv">XV</span>
+        <span class="script">Josefina</span>
+        <span class="surname">Günther</span>
+      </h1>
+      <p class="envelope-hint">Tocá el sobre para abrirlo</p>
+    </div>
+    <button class="envelope-button" id="open-envelope" type="button" aria-label="Abrir el sobre y ver la invitación">
+      <span class="envelope" id="envelope">
+        <span class="envelope-letter"><span class="l-xv">XV</span><small>Josefina</small><svg class="l-flower"><use href="#flower"/></svg></span>
+        <span class="envelope-back"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-seal">J</span>
+      </span>
+    </button>
+    <button class="skip-envelope" id="skip-envelope" type="button">Ver la invitación directamente</button>
+  </section>
+
+  <!-- ============ INVITACIÓN ============ -->
+  <main id="invitation-content" class="invitation-content" aria-hidden="true">
+
+    <!-- Portada -->
+    <section class="hero" aria-labelledby="main-title">
+      <svg class="butterfly bf-h1" aria-hidden="true"><use href="#butterfly"/></svg>
+      <svg class="butterfly bf-h2" aria-hidden="true"><use href="#butterfly"/></svg>
+      <p class="eyebrow">Una noche para recordar</p>
+      <svg class="filigree filigree-top" aria-hidden="true"><use href="#filigree"/></svg>
+      <p class="pre-title">Te invito a celebrar mis quince años</p>
+      <h2 id="main-title" class="hero-title">
+        <span class="xv">XV</span>
+        <span class="script">Josefina</span>
+        <span class="surname">Günther</span>
+      </h2>
+
+      <div class="date-block" aria-label="Fecha y hora del evento">
+        <span class="db-line" id="dia-semana">Sábado</span>
+        <span class="db-day" id="dia-num">20</span>
+        <span class="db-line" id="mes-anio">Febrero 2027</span>
+        <span class="db-time" id="hora-txt">21:00 hs</span>
+      </div>
+
+      <p class="venue">Salón <strong>Altos Álamos</strong></p>
+      <a class="button button-primary" href="#mensaje">Descubrir la invitación <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- Mensaje -->
+    <section class="section reveal" id="mensaje">
+      <p class="eyebrow">Una invitación de corazón</p>
+      <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+      <div class="message">
+        <p>Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos.</p>
+        <p>Estoy por comenzar una etapa muy especial de mi vida y quiero celebrarla rodeada de quienes hicieron, de una u otra manera, que mi camino hasta acá fuera más lindo.</p>
+        <p>Me encantaría compartir una noche llena de alegría, música y emociones, con recuerdos que queden para siempre.</p>
+        <p class="message-final">¡Por eso me gustaría que seas parte de este gran festejo!</p>
+      </div>
+    </section>
+
+    <!-- Foto 1 (si el archivo no está, el marco no se muestra) -->
+    <figure class="photo-frame frame-arch reveal">
+      <svg class="butterfly bf-corner-r" aria-hidden="true"><use href="#butterfly"/></svg>
+      <div class="frame"><div class="frame-inner"><img src="fotos/foto1.jpg" alt="Josefina" decoding="async"></div></div>
+    </figure>
+
+    <!-- Cuenta regresiva -->
+    <section class="section reveal" aria-labelledby="cuenta-titulo">
+      <p class="eyebrow">La cuenta regresiva</p>
+      <h2 id="cuenta-titulo">¡Cada vez falta menos!</h2>
+      <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+      <div class="countdown" role="timer" aria-live="off">
+        <div><strong id="days">—</strong><span>Días</span></div>
+        <div><strong id="hours">—</strong><span>Horas</span></div>
+        <div><strong id="minutes">—</strong><span>Min</span></div>
+        <div><strong id="seconds">—</strong><span>Seg</span></div>
+      </div>
+      <p id="countdown-note" class="muted">Prepará tu mejor sonrisa: ¡nos vemos pronto!</p>
+    </section>
+
+    <!-- Foto 2 -->
+    <figure class="photo-frame frame-oval reveal">
+      <svg class="butterfly bf-corner-l" aria-hidden="true"><use href="#butterfly"/></svg>
+      <div class="frame"><div class="frame-inner"><img src="fotos/foto2.jpg" alt="Josefina" decoding="async"></div></div>
+    </figure>
+
+    <!-- Lugar -->
+    <section class="section reveal" aria-labelledby="lugar-titulo">
+      <article class="card">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.2a7 7 0 1 1 14 0C19 14.800 12 21 12 21z"/><circle cx="12" cy="9.800" r="2.600"/></svg>
+        <p class="eyebrow">¿Dónde nos encontramos?</p>
+        <h2 id="lugar-titulo">El lugar</h2>
+        <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+        <p class="place-name">Salón Altos Álamos</p>
+        <p class="muted" id="place-address" hidden></p>
+        <p class="place-when" id="fecha-larga">Sábado 20 de febrero de 2027 · 21:00 hs</p>
+        <div class="button-row">
+          <a class="button button-primary" id="map-link" href="#" target="_blank" rel="noopener">Ver ubicación</a>
+          <button class="button button-outline" id="calendar-button" type="button">Agendar la fecha</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Playlist -->
+    <section class="section reveal" aria-labelledby="playlist-titulo">
+      <article class="card">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.500" cy="18" r="2.500"/><circle cx="17.500" cy="16" r="2.500"/></svg>
+        <p class="eyebrow">La música de la noche</p>
+        <h2 id="playlist-titulo">Sumá tu canción</h2>
+        <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+        <p>¿Qué tema no puede faltar en la fiesta? Abrí la playlist y agregá tu canción favorita.</p>
+        <a class="button button-primary" id="spotify-link" href="#" target="_blank" rel="noopener">Abrir playlist en Spotify ↗</a>
+        <audio id="background-music" loop preload="auto"></audio>
+      </article>
+    </section>
+
+    <!-- Entradas -->
+    <section class="section reveal" aria-labelledby="entradas-titulo">
+      <article class="card">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9a2 2 0 0 0 0 6v3h18v-3a2 2 0 0 1 0-6V6H3z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>
+        <p class="eyebrow">Entradas</p>
+        <h2 id="entradas-titulo">Valor de las entradas</h2>
+        <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+        <ul class="price-list">
+          <li><span>A partir de 13 años</span><strong>$40.000</strong></li>
+          <li><span>De 5 a 12 años</span><strong>$25.000</strong></li>
+          <li><span>Menores de 5 años</span><strong>Sin cargo</strong></li>
+        </ul>
+        <a class="button button-primary" id="payment-link" href="#" target="_blank" rel="noopener">Pagar con Mercado Pago ↗</a>
+      </article>
+    </section>
+
+    <!-- Foto 3 -->
+    <figure class="photo-frame frame-arch reveal">
+      <svg class="butterfly bf-corner-r" aria-hidden="true"><use href="#butterfly"/></svg>
+      <div class="frame"><div class="frame-inner"><img src="fotos/foto3.jpg" alt="Josefina" decoding="async"></div></div>
+    </figure>
+
+    <!-- Confirmación -->
+    <section class="section reveal" id="confirmar" aria-labelledby="rsvp-titulo">
+      <article class="card card-form">
+        <p class="eyebrow">Nos encantaría contar con vos</p>
+        <h2 id="rsvp-titulo">Confirmá tu asistencia</h2>
+        <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+        <p class="muted form-intro">Completá los datos de tu grupo para que podamos organizar todo.</p>
+
+        <form id="guest-form" novalidate>
+          <label class="field">
+            <span>Nombre y apellido de los integrantes</span>
+            <textarea name="integrantes" rows="2" required autocomplete="name" placeholder="Un nombre y apellido por integrante"></textarea>
+          </label>
+
+          <fieldset class="field choices">
+            <legend>¿Asistirán?</legend>
+            <label class="choice"><input type="radio" name="asistencia" value="Sí confirmo mi asistencia" required><span>Sí, confirmo</span></label>
+            <label class="choice"><input type="radio" name="asistencia" value="No confirmo mi asistencia" required><span>No podré ir</span></label>
+          </fieldset>
+
+          <label class="field">
+            <span>Teléfono</span>
+            <input name="telefono" type="tel" inputmode="tel" autocomplete="tel" required placeholder="Ej.: 343 1234567">
+          </label>
+
+          <label class="field">
+            <span>Menú</span>
+            <select name="menu" required>
+              <option value="">Elegí una opción</option>
+              <option value="Clásico">Menú clásico</option>
+              <option value="Especial">Menú especial</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Alergias o preferencias alimentarias <em>(si corresponde)</em></span>
+            <textarea name="alergias_preferencias" rows="3" placeholder="Celiaquía, vegetariano, otra alergia…"></textarea>
+          </label>
+
+          <button class="button button-primary button-block" type="submit" id="submit-button">Enviar confirmación</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="form-success" id="form-success" hidden tabindex="-1">
+          <svg class="icon icon-big" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M7.500 12.500l3 3 6-6.500"/></svg>
+          <h3 id="success-title">¡Gracias!</h3>
+          <p id="success-text" class="muted">Recibimos tu respuesta.</p>
+          <a class="button button-primary" id="wa-link" href="#" target="_blank" rel="noopener" hidden>Abrir WhatsApp ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="reveal">
+      <svg class="butterfly bf-footer" aria-hidden="true"><use href="#butterfly"/></svg>
+      <svg class="filigree" aria-hidden="true"><use href="#filigree"/></svg>
+      <p class="footer-line">Con amor, <span>Josefina</span></p>
+      <p class="muted small">Gracias por ser parte de este momento tan especial.</p>
+    </footer>
+  </main>
+
+  <button class="speaker-toggle" id="speaker-toggle" type="button" aria-label="Silenciar música" aria-pressed="false" hidden>
+    <svg class="sp-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.500v5h4l5 4v-13l-5 4z"/><path d="M16.500 9a4 4 0 0 1 0 6M18.800 6.500a7.500 7.500 0 0 1 0 11"/></svg>
+    <svg class="sp-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.500v5h4l5 4v-13l-5 4z"/><path d="M17 9.500l5 5M22 9.500l-5 5"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
